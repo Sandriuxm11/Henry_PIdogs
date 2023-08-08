@@ -20,15 +20,15 @@ module.exports = (sequelize) => {
       allowNull: false,
     },
     altura: {
-      type: DataTypes.DECIMAL,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     peso: {
-      type: DataTypes.DECIMAL,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     años_de_vida: {
-      type: DataTypes.DECIMAL,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     created:{
