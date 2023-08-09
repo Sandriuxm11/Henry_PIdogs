@@ -19,7 +19,7 @@ function App() {
       
       <Route path="/home" render={() => <Home/>} />
       
-      <Route path="/detail" render={() => <Detail/>} />
+      <Route path="/detail/:id" render={() => <Detail/>} />
 
       <Route path="/create" render={() => <Form/>} />
       

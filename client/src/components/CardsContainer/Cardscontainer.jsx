@@ -173,6 +173,7 @@ const CardsContainer = () => {
             {dogs.map(dog => {
                 return <Card 
                 imagen={dog.imagen}
+                id={dog.id}
                 name={dog.name}
                 temperamento={dog.temperamento}
                 peso={dog.peso}

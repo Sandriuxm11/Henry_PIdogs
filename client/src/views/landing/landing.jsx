@@ -12,15 +12,16 @@ const Landing = () => {
             <p>Aquí podrás encontrar información sobre tu peludito favorito, conocer más sobre sus características en general, nombre, peso, talla, temperamento, y escoger alguno que más vaya con tu personalidad.</p>
             <br></br>
             <div>
-                <img className={style.imagePrincipal} src={image} alt="Caritas de perros felices." /> 
-                <figcaption>Dueños felices, peluditos felices.</figcaption>
-            </div>
-
-            <div>
                 <button>
                     <Link to="./home">INGRESAR AHORA</Link>
                 </button>
             </div>
+            <br />
+            <div>
+                <img className={style.imagePrincipal} src={image} alt="Caritas de perros felices." /> 
+                <figcaption>Dueños felices, peluditos felices.</figcaption>
+            </div>
+
            
         </div>
     )
