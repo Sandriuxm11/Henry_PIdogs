@@ -2,6 +2,8 @@ import { useDispatch } from "react-redux";
 import CardsContainer from "../../components/CardsContainer/Cardscontainer";
 import { useEffect } from "react";
 import { getDogs } from "../../redux/actions";
+import style from "./home.module.css";
+import SearchBar from "../../components/SearchBar/SearchBar";
 
 // SearchBar: un input de búsqueda para encontrar razas de perros por nombre.
 // Cuando se le hace click a una Card deberá redirigir al detalle de esa raza específica.
@@ -19,12 +21,17 @@ const Home = () => {
     }, [dispatch])
 
     return (
-        <>
+        <div className={style.home}>
+        
+        <SearchBar />
+
+        <hr />
+
         <h1>Esta es la vista del Home</h1>
 
         <CardsContainer />
 
-        </>
+        </div>
     )
 };
 

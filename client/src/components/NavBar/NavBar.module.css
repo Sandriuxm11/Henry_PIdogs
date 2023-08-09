@@ -1,7 +1,28 @@
-.NavBar{
+@font-face {
+    font-family: "Preahvihear";
+    src: url("../../fonts/Preahvihear-Regular.ttf");
+}
+
+.navBar{
+    margin-top: 40px;
+    margin-left: 25px;
+    width: 30rem;
+    height: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     border-radius: 15px;
-    border: 2px solid yellowgreen;
+    border: 2px solid #fc694d;
+    background-color: #fc694d;
+    align-items: center;
+}
+
+.Link{
+    text-decoration: none;
+    font-family: "Preahvihear";
+    color: #f5dd7e;
+}
+
+.Link:hover{
+    background-color: #fc8d4d;
 }

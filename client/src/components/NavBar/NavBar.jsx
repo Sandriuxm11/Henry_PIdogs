@@ -3,10 +3,10 @@ import style from "./NavBar.module.css";
 
 const NavBar = () => {
     return(
-        <div className={style.NavBar}>
+        <div className={style.navBar}>
         
-        <Link to="/home">Home</Link>
-        <Link to="/create">Form</Link>
+            <Link to="/home" className={style.Link}>Home</Link>
+            <Link to="/create" className={style.Link}>Form</Link>
 
         </div>
     )
