@@ -1,0 +1,12 @@
+.Landing{
+    margin: 0;
+    padding: 0;
+    background-position:center;
+    background-size:cover;
+    background-image: url(./fondoLanding.jpg);
+}
+
+.imagePrincipal{
+    width: 900px;
+    height: auto;
+}
