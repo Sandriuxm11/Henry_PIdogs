@@ -172,6 +172,7 @@ const CardsContainer = () => {
         <div className={style.CardsContainer}>
             {dogs.map(dog => {
                 return <Card 
+                key={dog.id}
                 imagen={dog.imagen}
                 id={dog.id}
                 name={dog.name}
