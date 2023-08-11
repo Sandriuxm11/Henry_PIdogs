@@ -166,7 +166,7 @@ const CardsContainer = () => {
     //     }
     // ];
 
-    const dogs = useSelector(state => state.users);
+    const dogs = useSelector(state => state.dogs);
 
     return (
         <div className={style.CardsContainer}>

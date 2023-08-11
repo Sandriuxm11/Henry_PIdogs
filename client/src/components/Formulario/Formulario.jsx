@@ -1,6 +1,8 @@
+import style from "./Formulario.module.css";
+
 const Formulario = () => {
     return(
-        <form>
+        <form className={style.formulario}>
             <div>
                 <label htmlFor="name">Nombre de la Raza: </label>
                 <input type="text" name="name"/>

@@ -1,13 +1,14 @@
 import { GET_DOGS } from "./actions";
 
 const initialState = {
-    users: [],
+    dogs: [],
+    favoriteDogs: [],
 };
 
 const reducer = (state=initialState, action) => {
     switch(action.type){
         case GET_DOGS:
-            return {...state, users: action.payload};
+            return {...state, dogs: action.payload};
         default:
             return {...state};
     }

@@ -4,10 +4,9 @@ const SearchBar = () => {
     return (
         <div>
             <div className={style.SearchBar}>
-                <span>Búsqueda por:</span>
+                <span>Buscador:</span>
                 <input type="text" />
-                <button>ID</button>
-                <button>Nombre</button>
+                <button>Buscar</button>
             </div>
         </div>
     )

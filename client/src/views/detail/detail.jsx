@@ -1,8 +1,14 @@
+import style from "./detail.module.css";
+
 const Detail = () => {
     return (
-        <>
-        <h1>Esta es la vista del Detail</h1>
-        </>
+        <div>
+            <h1>Detalle del Perrito: </h1>
+            <div className={style.detalle}>
+
+            </div>
+
+        </div>
     )
 };
 

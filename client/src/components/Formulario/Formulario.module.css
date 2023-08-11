@@ -1,0 +1,8 @@
+.formulario{
+    border: 3px;
+    border-style: groove;
+    border-color: #0db2ac;
+    border-radius: 15px;
+    margin: 0px 380px;
+    padding: 50px;
+}
