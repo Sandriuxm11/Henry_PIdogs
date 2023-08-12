@@ -2,6 +2,7 @@ import axios from "axios";
 
 export const GET_DOGS = "GET_DOGS";
 export const GET_DOG_BY_ID = "GET_DOG_BY_ID";
+export const CLEAN_VIEW = "CLEAN_VIEW";
 
 export const getDogs = () => {
     return async function (dispatch){
@@ -18,3 +19,7 @@ export const getDogById = (id)=> {
         dispatch({type: GET_DOG_BY_ID, payload: dog});
     }
 }
+
+export const cleanView = () => {
+    return ({type: CLEAN_VIEW});
+};
