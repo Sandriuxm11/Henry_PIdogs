@@ -16,7 +16,7 @@ const Detail = () => {
         return (() => {
             dispatch(cleanView());
         })
-    }, [dispatch])
+    }, [dispatch, id])
 
     return (
         <div>

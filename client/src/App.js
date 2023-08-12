@@ -6,6 +6,7 @@ import Form from './views/form/form';
 import Home from './views/home/home';
 import Landing from './views/landing/landing';
 import SearchBar from './components/SearchBar/SearchBar';
+// import Busqueda from './views/Busqueda/Busqueda';
 import {Route} from "react-router-dom";
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
     
       <Route exact path= "/" component={Landing} />
       
+      {/* <Route path="/home/:name=name" render={() => <Busqueda/>} /> */}
+
       <Route path="/home" render={() => <Home/>} />
       
       <Route path="/detail/:id" render={() => <Detail/>} />

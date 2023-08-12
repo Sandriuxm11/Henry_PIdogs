@@ -1,7 +1,7 @@
 import { useDispatch } from "react-redux";
 import CardsContainer from "../../components/CardsContainer/Cardscontainer";
 import { useEffect } from "react";
-import { getDogs } from "../../redux/actions";
+import { getDogs, cleanViewHome } from "../../redux/actions";
 import style from "./home.module.css";
 
 // SearchBar: un input de búsqueda para encontrar razas de perros por nombre.
@@ -16,7 +16,10 @@ const Home = () => {
 
     useEffect(() => {
         dispatch(getDogs());
-    }, [dispatch])
+        return(()=>{
+            dispatch(cleanViewHome());
+        })
+    }, [dispatch]);
 
     return (
         <div className={style.home}>

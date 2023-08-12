@@ -14,13 +14,21 @@
 input{
     margin: 5px;
     border-radius: 4px;
+    font-size: 20px;
+    width: 220px;
+    height: 44px;
 }
 
 button{
     margin: 5px;
     border-radius: 5px;
+    width: fit-content;
 }
 
 button:hover{
     background-color: #0db2ac;
+}
+
+span{
+    margin: 20px;
 }
