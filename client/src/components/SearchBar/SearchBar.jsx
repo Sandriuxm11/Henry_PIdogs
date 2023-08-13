@@ -23,8 +23,7 @@ const SearchBar = () => {
     return (
         <div>
             <div className={style.SearchBar}>
-                <span>Buscador:</span>
-                <input type="text" onChange={handleWrite} value={busqueda.input}/>
+                <input placeholder="Buscar por nombre..." type="text" onChange={handleWrite} value={busqueda.input}/>
                 <Link to={`/home/name=${busqueda.input}`}>
                     <button name="boton" onClick={handleClick}>Buscar</button>
                 </Link>

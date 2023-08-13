@@ -6,7 +6,7 @@ const Paginado = (props) => {
 
             <button onClick={props.prevHandler}>Prev</button>
             <button onClick={props.nextHandler}>Next</button>
-
+            
         </div>
     )
 };

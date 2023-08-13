@@ -1,4 +1,4 @@
-import { GET_DOGS, GET_DOG_BY_ID, CLEAN_VIEW, SEARCH_BY_NAME, CLEAN_VIEW_HOME} from "./actions";
+import { GET_DOGS, GET_DOG_BY_ID, CLEAN_VIEW, SEARCH_BY_NAME, CLEAN_VIEW_SEARCH} from "./actions";
 
 const initialState = {
     dogs: [],
@@ -15,10 +15,10 @@ const reducer = (state=initialState, action) => {
             return {...state, dog: action.payload};
         case CLEAN_VIEW:
             return {...state, dog: {}};
-        case CLEAN_VIEW_HOME:
-            return {...state, dogs: {}};
+        case CLEAN_VIEW_SEARCH:
+            return {...state, dogSearched: {}};
         case SEARCH_BY_NAME:
-            return {...state, dogs: action.payload};
+            return {...state, dogSearched: action.payload};
         default:
             return {...state};
     }
