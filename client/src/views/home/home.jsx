@@ -7,7 +7,6 @@ import { useState } from "react";
 import { getDogs } from "../../redux/actions";
 import style from "./home.module.css";
 
-// SearchBar: un input de búsqueda para encontrar razas de perros por nombre.
 // Botones/Opciones para filtrar por temperamentos, y por si su origen es de la API o de la base de datos (creados por nosotros desde el formulario).
 // Botones/Opciones para ordenar tanto ascendentemente como descendentemente las razas de perros por orden alfabético y por peso.
 

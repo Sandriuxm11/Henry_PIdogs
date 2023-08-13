@@ -1,17 +1,11 @@
 const enlinea = (array) => {
     let newArr = [];
 
-    array.forEach(element => {
-        newArr.push(Object.values(element));
-    });
+    array.map(element=>{newArr.push(Object.values(element))});
 
-    // for (i=0; i<=array.length; i++){
-    //     newArr.push(Object.values(array[i]));
-    // }
+    const temperamentos = newArr.flat().join(", ");
 
-    // array.map(elemento => Object.values({elemento}).toString()) //.join(", "));
-
-    return newArr.join(", ");
+    return temperamentos;
 };
 
 module.exports = enlinea;

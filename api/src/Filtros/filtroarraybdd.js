@@ -9,7 +9,7 @@ const filtroArrayBdd = async (arr) => {
             altura: elemento.altura,
             peso: elemento.peso,
             años_de_vida: elemento.años_de_vida,
-            temperamento: elemento.Temperaments,
+            temperamento: enlinea(elemento.Temperaments),
             created: elemento.created,
         }
     })
