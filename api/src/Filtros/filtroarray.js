@@ -2,7 +2,7 @@ const arrayFiltrada = (arr) => {
     const mapeo = arr.map(elemento => {
         return {
             id: elemento.id,
-            imagen: elemento.image.url,
+            imagen: `https://cdn2.thedogapi.com/images/${elemento.reference_image_id}.jpg`,
             name: elemento.name,
             altura: elemento.height.metric,
             peso: elemento.weight.metric,

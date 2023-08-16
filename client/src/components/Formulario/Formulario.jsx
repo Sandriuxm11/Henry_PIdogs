@@ -40,14 +40,9 @@ const Formulario = () => {
     };
 
     const validateName = (form) => {
-        if((form.name).match(validatenombre)!=null && form.name.length > 2) setErrors({...errors, name: ""});
+        if((form.name).match(validatenombre)!==null && form.name.length > 2) setErrors({...errors, name: ""});
         else{ setErrors({...errors, name: "Hay errores en el nombre"})};
         if(form.name === ""){setErrors({...errors, name: "El nombre está vacío"})};
-
-        // if(form.imagen.length > 2) setErrors({...errors, imagen: ""});
-        // else{ setErrors({...errors, imagen: "Hay errores en el nombre"})};
-        // if(form.imagen === ""){setErrors({...errors, imagen: "El nombre está vacío"})};
-
     };
 
     return(
